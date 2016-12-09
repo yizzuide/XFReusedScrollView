@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E4153BBD3DD16A9FF2E7C301E83B32 /* XFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CEA52DC494F2CC0108AA89A20C2BAB /* XFSettingGroup.m */; };
+		156747BAD862D1AF13D0E42EAD1B8ABB /* XFSettingAssistImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7BF5CBB2CCB37AC3A8FB3CAEC31F16 /* XFSettingAssistImageCell.m */; };
+		26BBB043C67ADDC5AA07A52891438E47 /* XFSettingInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF92BE2B86BF9276C973300B8E0F3030 /* XFSettingInfoCell.m */; };
+		331DA4772E3A036D409AA7D5AC72E617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		38B3BBD8E6520AFD8F9DA1CABE85AB7D /* XFSettingAssistImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DF38943EE8EAB60A3A9E8EEC7B5967 /* XFSettingAssistImageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D51FF4E80F27C43EAEEEFDE5F75B359 /* XFSettingsProt.h in Headers */ = {isa = PBXBuildFile; fileRef = 71511843E1BCD53997FE14F9A2D38984 /* XFSettingsProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		462CA44AD800E8BF7700CB6BDD8BCD79 /* XFCellAttrsData.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C277DC486129276A746809F133063 /* XFCellAttrsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4937BE0B2DC0157279BB49C7F27569F6 /* XFSettingSwitchItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 124F450061A47A079F9816CB06DE02A3 /* XFSettingSwitchItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4705314C31B0D1305C99A48D24627C /* XFSettingTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9201B76F1D8AF909ADDA3EF87C8C7BE7 /* XFSettingTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DB0600339205A841E2B86562B9273C /* XFTableViewAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C199238EDC65EA4E41ABBAB3583CBC3 /* XFTableViewAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62AC7C8EF1FA067C1382BA4624BDC930 /* XFSettingInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D60725778E3DA47BAD9B7E4BBE48C4B /* XFSettingInfoItem.m */; };
+		7E0274570B634752FC4B5278D2BB3C0E /* XFSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AA76EF6FB39D1D70D3C6000F05E3564A /* XFSettings.m */; };
+		856DD785BBC60B6FF5D4F74AFD70A473 /* XFSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAEBE75098782C6AAA9FDBB891AF5B2 /* XFSettingTableViewController.m */; };
+		85C96CEA79DF7FCC7C3F140944194C50 /* XFSettingInfoDotCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ADF5908CC791B8D3A6EB0DEEDB068D /* XFSettingInfoDotCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92762DCADF704A4A274694AAE7D00F6F /* XFSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9403B3F7E218DE6AFD6BBD60804F5 /* XFSettingArrowItem.m */; };
+		958D435A7C1A6CA54E298FCAF0FC29C5 /* XFSettingAssistImageItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F929E322110D663A2449F1C4B66A2D /* XFSettingAssistImageItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D22562FB43A6A3E06BD1B8172159700 /* XFSettingArrowItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F43852821E0B8C0A533B168C19724E47 /* XFSettingArrowItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7F9CF2FFEF0541D24EE2E16767AF35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		AB2B7C2B1012A40F9656CE12F90E1599 /* XFSettingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EFC8BBBC8F1990C344A7954A7175760 /* XFSettingCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE525B874877955CFE358296250072FB /* XFSettingAssistImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FA5AF0BE67BBD5A773099EE475D6C /* XFSettingAssistImageItem.m */; };
+		AF4BE2EE3CE8A6ACCABAA66A5E1E2482 /* XFSettingInfoCountCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ACCA9769E04E2DBE0BD69C941D4B0E9 /* XFSettingInfoCountCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E4BD2AAABC5BCF1A310B622270A789 /* UIViewController+XFSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 7316D730CD94FD1C84EE530EBF7B1407 /* UIViewController+XFSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1493E4F9561BD2CC617107D3C376979 /* XFSettingInfoItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BE84A76DAD54533357D66EE058440B76 /* XFSettingInfoItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C3883C23E8E54729158E2EA7197935 /* XFSettings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3C0D406CC8130927DD2E4A198704E /* XFSettings-dummy.m */; };
+		C75965A2283E76488997B67E21055028 /* XFTableViewAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2695B47F4B2A00AAA4857324BB19768C /* XFTableViewAgent.m */; };
+		CAB6C69202F15A498486132A9F69DB56 /* XFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7F6500D4AD76B7FFC91B80791E9D8 /* XFSettingItem.m */; };
+		CC29E6D77B569A5B32C7B1EF4D8AF04E /* XFSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EDACD024EDB8701549426CDA3F9161 /* XFSettingSwitchItem.m */; };
+		D40D497872BEEE025C91149E3E218CBD /* UIViewController+XFSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 820673603072B5BB88CFC937F4782259 /* UIViewController+XFSettings.m */; };
+		D412AD24691460DC741205E704775CCF /* XFSettingInfoDotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5869FB8A5578DA8ACA6142290588DA7 /* XFSettingInfoDotCell.m */; };
+		D80DEF24ECA215FFC10076F4103425F0 /* XFSettingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 82130C498732E3B772ADC81148986476 /* XFSettingItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E46628B71D798D02B9D75C253520BAFA /* XFSettingTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F66F911447F0B8FC1DD5AE83CEDF9DFB /* XFSettingTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E602FDBE85E0D34BE1B95EC3DCBF4DC8 /* XFSettingInfoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D7695EF3422AEF41BD947B7DAF4831C8 /* XFSettingInfoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E96C3EB9D431B2A68AB7440726F9F523 /* XFSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EEB0882C6D0E4BB6A2B90EA31A7F77 /* XFSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98809F163707BE17114629FCC9A4056 /* Pods-XFReusedScrollViewExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 732A1E39F4392EDC8F2AEF833D3EF09F /* Pods-XFReusedScrollViewExample-dummy.m */; };
+		EDAA22A8FE8DA223479FD1444540FB2A /* XFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F802659406C5828D2D59B257CCC01A7 /* XFSettingCell.m */; };
+		EDC91B9A8CA6078C8F7237118A360682 /* XFCellAttrsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C165AA5592939B4B9ADFBDFD3CE5683 /* XFCellAttrsData.m */; };
+		F0AC695A50E19DD4CDB37D86233F1779 /* XFSettingInfoCountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10030AF2E2F2AA739691554977277D17 /* XFSettingInfoCountCell.m */; };
+		F534287AD4DDAE6B21CBA46862EE10FC /* XFSettingGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F58CF361DD9A12392266D5957FBDDA /* XFSettingGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ECA39B884E6398A77209D4A1A383F9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020E6E2FBDF19210D44547C0060D787C;
+			remoteInfo = XFSettings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C3C735ADA2098F8F0AAD207EFBCE04 /* Pods-XFReusedScrollViewExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XFReusedScrollViewExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0972FD84C052AA67BC7B5AB1413902D4 /* XFSettings.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFSettings.xcconfig; sourceTree = "<group>"; };
+		10030AF2E2F2AA739691554977277D17 /* XFSettingInfoCountCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingInfoCountCell.m; path = XFSettings/XFSettingInfoCountCell.m; sourceTree = "<group>"; };
+		117FA5AF0BE67BBD5A773099EE475D6C /* XFSettingAssistImageItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingAssistImageItem.m; path = XFSettings/XFSettingAssistImageItem.m; sourceTree = "<group>"; };
+		124F450061A47A079F9816CB06DE02A3 /* XFSettingSwitchItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingSwitchItem.h; path = XFSettings/XFSettingSwitchItem.h; sourceTree = "<group>"; };
+		1ACCA9769E04E2DBE0BD69C941D4B0E9 /* XFSettingInfoCountCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingInfoCountCell.h; path = XFSettings/XFSettingInfoCountCell.h; sourceTree = "<group>"; };
+		1BB3C0D406CC8130927DD2E4A198704E /* XFSettings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFSettings-dummy.m"; sourceTree = "<group>"; };
+		1F802659406C5828D2D59B257CCC01A7 /* XFSettingCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingCell.m; path = XFSettings/XFSettingCell.m; sourceTree = "<group>"; };
+		22EEB0882C6D0E4BB6A2B90EA31A7F77 /* XFSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettings.h; path = XFSettings/XFSettings.h; sourceTree = "<group>"; };
+		2695B47F4B2A00AAA4857324BB19768C /* XFTableViewAgent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFTableViewAgent.m; path = XFSettings/XFTableViewAgent.m; sourceTree = "<group>"; };
+		2C165AA5592939B4B9ADFBDFD3CE5683 /* XFCellAttrsData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFCellAttrsData.m; path = XFSettings/XFCellAttrsData.m; sourceTree = "<group>"; };
+		35ADF5908CC791B8D3A6EB0DEEDB068D /* XFSettingInfoDotCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingInfoDotCell.h; path = XFSettings/XFSettingInfoDotCell.h; sourceTree = "<group>"; };
+		3C199238EDC65EA4E41ABBAB3583CBC3 /* XFTableViewAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFTableViewAgent.h; path = XFSettings/XFTableViewAgent.h; sourceTree = "<group>"; };
+		3C988879BBB0339B2374F767C0CAB774 /* Pods-XFReusedScrollViewExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XFReusedScrollViewExample-frameworks.sh"; sourceTree = "<group>"; };
+		43F929E322110D663A2449F1C4B66A2D /* XFSettingAssistImageItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingAssistImageItem.h; path = XFSettings/XFSettingAssistImageItem.h; sourceTree = "<group>"; };
+		4D60725778E3DA47BAD9B7E4BBE48C4B /* XFSettingInfoItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingInfoItem.m; path = XFSettings/XFSettingInfoItem.m; sourceTree = "<group>"; };
+		4FB9403B3F7E218DE6AFD6BBD60804F5 /* XFSettingArrowItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingArrowItem.m; path = XFSettings/XFSettingArrowItem.m; sourceTree = "<group>"; };
+		56F58CF361DD9A12392266D5957FBDDA /* XFSettingGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingGroup.h; path = XFSettings/XFSettingGroup.h; sourceTree = "<group>"; };
+		63FF6085C5A9A2BEE650EEF326F606EF /* XFSettings-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFSettings-prefix.pch"; sourceTree = "<group>"; };
+		6EFC8BBBC8F1990C344A7954A7175760 /* XFSettingCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingCell.h; path = XFSettings/XFSettingCell.h; sourceTree = "<group>"; };
+		71511843E1BCD53997FE14F9A2D38984 /* XFSettingsProt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingsProt.h; path = XFSettings/XFSettingsProt.h; sourceTree = "<group>"; };
+		7316D730CD94FD1C84EE530EBF7B1407 /* UIViewController+XFSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+XFSettings.h"; path = "XFSettings/UIViewController+XFSettings.h"; sourceTree = "<group>"; };
+		732A1E39F4392EDC8F2AEF833D3EF09F /* Pods-XFReusedScrollViewExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XFReusedScrollViewExample-dummy.m"; sourceTree = "<group>"; };
+		820673603072B5BB88CFC937F4782259 /* UIViewController+XFSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XFSettings.m"; path = "XFSettings/UIViewController+XFSettings.m"; sourceTree = "<group>"; };
+		82130C498732E3B772ADC81148986476 /* XFSettingItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingItem.h; path = XFSettings/XFSettingItem.h; sourceTree = "<group>"; };
+		9201B76F1D8AF909ADDA3EF87C8C7BE7 /* XFSettingTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingTableViewDataSource.h; path = XFSettings/XFSettingTableViewDataSource.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94238023B11B17C1514F0E5FEBCE9273 /* libPods-XFReusedScrollViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XFReusedScrollViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960D73E58A60DAD6D78AC98FA68E604C /* libXFSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXFSettings.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E7F6500D4AD76B7FFC91B80791E9D8 /* XFSettingItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingItem.m; path = XFSettings/XFSettingItem.m; sourceTree = "<group>"; };
+		AA76EF6FB39D1D70D3C6000F05E3564A /* XFSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettings.m; path = XFSettings/XFSettings.m; sourceTree = "<group>"; };
+		AF7BF5CBB2CCB37AC3A8FB3CAEC31F16 /* XFSettingAssistImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingAssistImageCell.m; path = XFSettings/XFSettingAssistImageCell.m; sourceTree = "<group>"; };
+		B6C364DA7F7909FBD97DEA0A78A70C06 /* Pods-XFReusedScrollViewExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFReusedScrollViewExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE84A76DAD54533357D66EE058440B76 /* XFSettingInfoItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingInfoItem.h; path = XFSettings/XFSettingInfoItem.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFAEBE75098782C6AAA9FDBB891AF5B2 /* XFSettingTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingTableViewController.m; path = XFSettings/XFSettingTableViewController.m; sourceTree = "<group>"; };
+		D7695EF3422AEF41BD947B7DAF4831C8 /* XFSettingInfoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingInfoCell.h; path = XFSettings/XFSettingInfoCell.h; sourceTree = "<group>"; };
+		D7EDACD024EDB8701549426CDA3F9161 /* XFSettingSwitchItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingSwitchItem.m; path = XFSettings/XFSettingSwitchItem.m; sourceTree = "<group>"; };
+		DC7C277DC486129276A746809F133063 /* XFCellAttrsData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFCellAttrsData.h; path = XFSettings/XFCellAttrsData.h; sourceTree = "<group>"; };
+		DDEDAF3A2714FEC203D7C3AD626CE1F6 /* Pods-XFReusedScrollViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFReusedScrollViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		DF92BE2B86BF9276C973300B8E0F3030 /* XFSettingInfoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingInfoCell.m; path = XFSettings/XFSettingInfoCell.m; sourceTree = "<group>"; };
+		E0193030CD3D40FA3EF7E39A35E2954A /* Pods-XFReusedScrollViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFReusedScrollViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CEA52DC494F2CC0108AA89A20C2BAB /* XFSettingGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingGroup.m; path = XFSettings/XFSettingGroup.m; sourceTree = "<group>"; };
+		E5869FB8A5578DA8ACA6142290588DA7 /* XFSettingInfoDotCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFSettingInfoDotCell.m; path = XFSettings/XFSettingInfoDotCell.m; sourceTree = "<group>"; };
+		F34568B70CDB9B592DA0073C7FFEC05D /* Pods-XFReusedScrollViewExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XFReusedScrollViewExample-resources.sh"; sourceTree = "<group>"; };
+		F43852821E0B8C0A533B168C19724E47 /* XFSettingArrowItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingArrowItem.h; path = XFSettings/XFSettingArrowItem.h; sourceTree = "<group>"; };
+		F66F911447F0B8FC1DD5AE83CEDF9DFB /* XFSettingTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingTableViewController.h; path = XFSettings/XFSettingTableViewController.h; sourceTree = "<group>"; };
+		F8DF38943EE8EAB60A3A9E8EEC7B5967 /* XFSettingAssistImageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFSettingAssistImageCell.h; path = XFSettings/XFSettingAssistImageCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190760B8BE6AC133051E9E8B2341D434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331DA4772E3A036D409AA7D5AC72E617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AFDCF0607886B5704AEDBE39335EF08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7F9CF2FFEF0541D24EE2E16767AF35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D7D765C10D3AE38A652AFCACD5954F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E79177AE0ABBA7CA86AA1E55BC070EF3 /* XFSettings */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F92E68C1AC678847C5DBD3B00513A09 /* Pods-XFReusedScrollViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				04C3C735ADA2098F8F0AAD207EFBCE04 /* Pods-XFReusedScrollViewExample-acknowledgements.markdown */,
+				B6C364DA7F7909FBD97DEA0A78A70C06 /* Pods-XFReusedScrollViewExample-acknowledgements.plist */,
+				732A1E39F4392EDC8F2AEF833D3EF09F /* Pods-XFReusedScrollViewExample-dummy.m */,
+				3C988879BBB0339B2374F767C0CAB774 /* Pods-XFReusedScrollViewExample-frameworks.sh */,
+				F34568B70CDB9B592DA0073C7FFEC05D /* Pods-XFReusedScrollViewExample-resources.sh */,
+				E0193030CD3D40FA3EF7E39A35E2954A /* Pods-XFReusedScrollViewExample.debug.xcconfig */,
+				DDEDAF3A2714FEC203D7C3AD626CE1F6 /* Pods-XFReusedScrollViewExample.release.xcconfig */,
+			);
+			name = "Pods-XFReusedScrollViewExample";
+			path = "Target Support Files/Pods-XFReusedScrollViewExample";
+			sourceTree = "<group>";
+		};
+		39307616765D0527A5E1D310BF1BA338 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F92E68C1AC678847C5DBD3B00513A09 /* Pods-XFReusedScrollViewExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				12D7D765C10D3AE38A652AFCACD5954F /* Pods */,
+				AEEF17DDEAE586FC8A37245CACB4C142 /* Products */,
+				39307616765D0527A5E1D310BF1BA338 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AEEF17DDEAE586FC8A37245CACB4C142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94238023B11B17C1514F0E5FEBCE9273 /* libPods-XFReusedScrollViewExample.a */,
+				960D73E58A60DAD6D78AC98FA68E604C /* libXFSettings.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1371C10CDAAC093D31D47BD5DD58616 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0972FD84C052AA67BC7B5AB1413902D4 /* XFSettings.xcconfig */,
+				1BB3C0D406CC8130927DD2E4A198704E /* XFSettings-dummy.m */,
+				63FF6085C5A9A2BEE650EEF326F606EF /* XFSettings-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XFSettings";
+			sourceTree = "<group>";
+		};
+		E79177AE0ABBA7CA86AA1E55BC070EF3 /* XFSettings */ = {
+			isa = PBXGroup;
+			children = (
+				7316D730CD94FD1C84EE530EBF7B1407 /* UIViewController+XFSettings.h */,
+				820673603072B5BB88CFC937F4782259 /* UIViewController+XFSettings.m */,
+				DC7C277DC486129276A746809F133063 /* XFCellAttrsData.h */,
+				2C165AA5592939B4B9ADFBDFD3CE5683 /* XFCellAttrsData.m */,
+				F43852821E0B8C0A533B168C19724E47 /* XFSettingArrowItem.h */,
+				4FB9403B3F7E218DE6AFD6BBD60804F5 /* XFSettingArrowItem.m */,
+				F8DF38943EE8EAB60A3A9E8EEC7B5967 /* XFSettingAssistImageCell.h */,
+				AF7BF5CBB2CCB37AC3A8FB3CAEC31F16 /* XFSettingAssistImageCell.m */,
+				43F929E322110D663A2449F1C4B66A2D /* XFSettingAssistImageItem.h */,
+				117FA5AF0BE67BBD5A773099EE475D6C /* XFSettingAssistImageItem.m */,
+				6EFC8BBBC8F1990C344A7954A7175760 /* XFSettingCell.h */,
+				1F802659406C5828D2D59B257CCC01A7 /* XFSettingCell.m */,
+				56F58CF361DD9A12392266D5957FBDDA /* XFSettingGroup.h */,
+				E3CEA52DC494F2CC0108AA89A20C2BAB /* XFSettingGroup.m */,
+				D7695EF3422AEF41BD947B7DAF4831C8 /* XFSettingInfoCell.h */,
+				DF92BE2B86BF9276C973300B8E0F3030 /* XFSettingInfoCell.m */,
+				1ACCA9769E04E2DBE0BD69C941D4B0E9 /* XFSettingInfoCountCell.h */,
+				10030AF2E2F2AA739691554977277D17 /* XFSettingInfoCountCell.m */,
+				35ADF5908CC791B8D3A6EB0DEEDB068D /* XFSettingInfoDotCell.h */,
+				E5869FB8A5578DA8ACA6142290588DA7 /* XFSettingInfoDotCell.m */,
+				BE84A76DAD54533357D66EE058440B76 /* XFSettingInfoItem.h */,
+				4D60725778E3DA47BAD9B7E4BBE48C4B /* XFSettingInfoItem.m */,
+				82130C498732E3B772ADC81148986476 /* XFSettingItem.h */,
+				A4E7F6500D4AD76B7FFC91B80791E9D8 /* XFSettingItem.m */,
+				22EEB0882C6D0E4BB6A2B90EA31A7F77 /* XFSettings.h */,
+				AA76EF6FB39D1D70D3C6000F05E3564A /* XFSettings.m */,
+				71511843E1BCD53997FE14F9A2D38984 /* XFSettingsProt.h */,
+				124F450061A47A079F9816CB06DE02A3 /* XFSettingSwitchItem.h */,
+				D7EDACD024EDB8701549426CDA3F9161 /* XFSettingSwitchItem.m */,
+				F66F911447F0B8FC1DD5AE83CEDF9DFB /* XFSettingTableViewController.h */,
+				CFAEBE75098782C6AAA9FDBB891AF5B2 /* XFSettingTableViewController.m */,
+				9201B76F1D8AF909ADDA3EF87C8C7BE7 /* XFSettingTableViewDataSource.h */,
+				3C199238EDC65EA4E41ABBAB3583CBC3 /* XFTableViewAgent.h */,
+				2695B47F4B2A00AAA4857324BB19768C /* XFTableViewAgent.m */,
+				E1371C10CDAAC093D31D47BD5DD58616 /* Support Files */,
+			);
+			path = XFSettings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAF7E97A8B8D534BA9EF193AABB3E43E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E4BD2AAABC5BCF1A310B622270A789 /* UIViewController+XFSettings.h in Headers */,
+				462CA44AD800E8BF7700CB6BDD8BCD79 /* XFCellAttrsData.h in Headers */,
+				9D22562FB43A6A3E06BD1B8172159700 /* XFSettingArrowItem.h in Headers */,
+				38B3BBD8E6520AFD8F9DA1CABE85AB7D /* XFSettingAssistImageCell.h in Headers */,
+				958D435A7C1A6CA54E298FCAF0FC29C5 /* XFSettingAssistImageItem.h in Headers */,
+				AB2B7C2B1012A40F9656CE12F90E1599 /* XFSettingCell.h in Headers */,
+				F534287AD4DDAE6B21CBA46862EE10FC /* XFSettingGroup.h in Headers */,
+				E602FDBE85E0D34BE1B95EC3DCBF4DC8 /* XFSettingInfoCell.h in Headers */,
+				AF4BE2EE3CE8A6ACCABAA66A5E1E2482 /* XFSettingInfoCountCell.h in Headers */,
+				85C96CEA79DF7FCC7C3F140944194C50 /* XFSettingInfoDotCell.h in Headers */,
+				C1493E4F9561BD2CC617107D3C376979 /* XFSettingInfoItem.h in Headers */,
+				D80DEF24ECA215FFC10076F4103425F0 /* XFSettingItem.h in Headers */,
+				E96C3EB9D431B2A68AB7440726F9F523 /* XFSettings.h in Headers */,
+				3D51FF4E80F27C43EAEEEFDE5F75B359 /* XFSettingsProt.h in Headers */,
+				4937BE0B2DC0157279BB49C7F27569F6 /* XFSettingSwitchItem.h in Headers */,
+				E46628B71D798D02B9D75C253520BAFA /* XFSettingTableViewController.h in Headers */,
+				4D4705314C31B0D1305C99A48D24627C /* XFSettingTableViewDataSource.h in Headers */,
+				60DB0600339205A841E2B86562B9273C /* XFTableViewAgent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		020E6E2FBDF19210D44547C0060D787C /* XFSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6B144A9BA9CE7978858CF5EAAEEFD1 /* Build configuration list for PBXNativeTarget "XFSettings" */;
+			buildPhases = (
+				5BCA9D760319F762605EB5D53555C6D8 /* Sources */,
+				7AFDCF0607886B5704AEDBE39335EF08 /* Frameworks */,
+				FAF7E97A8B8D534BA9EF193AABB3E43E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XFSettings;
+			productName = XFSettings;
+			productReference = 960D73E58A60DAD6D78AC98FA68E604C /* libXFSettings.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1B4CA0DFFF677D62FC3F171F69740264 /* Pods-XFReusedScrollViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C00FB19840359503C5C9E8F4BD01859 /* Build configuration list for PBXNativeTarget "Pods-XFReusedScrollViewExample" */;
+			buildPhases = (
+				EAB2B31429897E33585A29B9B6E56D02 /* Sources */,
+				190760B8BE6AC133051E9E8B2341D434 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A513CE35EB1FDFF782C2E86019DA9E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-XFReusedScrollViewExample";
+			productName = "Pods-XFReusedScrollViewExample";
+			productReference = 94238023B11B17C1514F0E5FEBCE9273 /* libPods-XFReusedScrollViewExample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AEEF17DDEAE586FC8A37245CACB4C142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B4CA0DFFF677D62FC3F171F69740264 /* Pods-XFReusedScrollViewExample */,
+				020E6E2FBDF19210D44547C0060D787C /* XFSettings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BCA9D760319F762605EB5D53555C6D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40D497872BEEE025C91149E3E218CBD /* UIViewController+XFSettings.m in Sources */,
+				EDC91B9A8CA6078C8F7237118A360682 /* XFCellAttrsData.m in Sources */,
+				92762DCADF704A4A274694AAE7D00F6F /* XFSettingArrowItem.m in Sources */,
+				156747BAD862D1AF13D0E42EAD1B8ABB /* XFSettingAssistImageCell.m in Sources */,
+				AE525B874877955CFE358296250072FB /* XFSettingAssistImageItem.m in Sources */,
+				EDAA22A8FE8DA223479FD1444540FB2A /* XFSettingCell.m in Sources */,
+				10E4153BBD3DD16A9FF2E7C301E83B32 /* XFSettingGroup.m in Sources */,
+				26BBB043C67ADDC5AA07A52891438E47 /* XFSettingInfoCell.m in Sources */,
+				F0AC695A50E19DD4CDB37D86233F1779 /* XFSettingInfoCountCell.m in Sources */,
+				D412AD24691460DC741205E704775CCF /* XFSettingInfoDotCell.m in Sources */,
+				62AC7C8EF1FA067C1382BA4624BDC930 /* XFSettingInfoItem.m in Sources */,
+				CAB6C69202F15A498486132A9F69DB56 /* XFSettingItem.m in Sources */,
+				C3C3883C23E8E54729158E2EA7197935 /* XFSettings-dummy.m in Sources */,
+				7E0274570B634752FC4B5278D2BB3C0E /* XFSettings.m in Sources */,
+				CC29E6D77B569A5B32C7B1EF4D8AF04E /* XFSettingSwitchItem.m in Sources */,
+				856DD785BBC60B6FF5D4F74AFD70A473 /* XFSettingTableViewController.m in Sources */,
+				C75965A2283E76488997B67E21055028 /* XFTableViewAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2B31429897E33585A29B9B6E56D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98809F163707BE17114629FCC9A4056 /* Pods-XFReusedScrollViewExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A513CE35EB1FDFF782C2E86019DA9E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XFSettings;
+			target = 020E6E2FBDF19210D44547C0060D787C /* XFSettings */;
+			targetProxy = 0ECA39B884E6398A77209D4A1A383F9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		548786E3515092EC46D3972E1120B3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEDAF3A2714FEC203D7C3AD626CE1F6 /* Pods-XFReusedScrollViewExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7990F3702E7411D97B0483CCF29FFC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0193030CD3D40FA3EF7E39A35E2954A /* Pods-XFReusedScrollViewExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD8807F35A29B417714D4BDCB75F2411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972FD84C052AA67BC7B5AB1413902D4 /* XFSettings.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XFSettings/XFSettings-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9044AABF3E63C8D35967C6C76C38D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972FD84C052AA67BC7B5AB1413902D4 /* XFSettings.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XFSettings/XFSettings-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C00FB19840359503C5C9E8F4BD01859 /* Build configuration list for PBXNativeTarget "Pods-XFReusedScrollViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7990F3702E7411D97B0483CCF29FFC98 /* Debug */,
+				548786E3515092EC46D3972E1120B3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6B144A9BA9CE7978858CF5EAAEEFD1 /* Build configuration list for PBXNativeTarget "XFSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9044AABF3E63C8D35967C6C76C38D58 /* Debug */,
+				AD8807F35A29B417714D4BDCB75F2411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
