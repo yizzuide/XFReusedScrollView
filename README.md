@@ -4,6 +4,6 @@
 ![License](https://img.shields.io/npm/l/express.svg)
 ![Version](https://img.shields.io/badge/platform-ios6%2B-green.svg)
 
-Powerful Reused ScrollView For IOS. Support custom layout config.
+Powerful reused scrollView for IOS. Support custom layout config.
 
 ![](./ScreenShot/usage.gif)
