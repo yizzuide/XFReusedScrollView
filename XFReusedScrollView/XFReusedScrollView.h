@@ -9,32 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XFReusedCellDelegate.h"
 
-
-typedef enum {
-    // ScrollView上下左右间距
-    XFReusedScrollViewMarginTypeTop,
-    XFReusedScrollViewMarginTypeBottom,
-    XFReusedScrollViewMarginTypeLeft,
-    XFReusedScrollViewMarginTypeRight,
-    
-    XFReusedScrollViewMarginTypeColumn, // cell的列间距
-    XFReusedScrollViewMarginTypeRow, // cell的行间距
-} XFReusedScrollViewMarginType;
-
-
-@class XFReusedScrollView;
-@protocol XFReusedScrollViewDelegate <UIScrollViewDelegate>
-
-@optional
-/**
- *  cell内容间距
- */
-- (CGFloat)reusedScrollView:(XFReusedScrollView *)reusedScrollView marginForType:(XFReusedScrollViewMarginType)type;
-@end
-
 @interface XFReusedScrollView : UIScrollView
-
-@property (nonatomic, weak) id<XFReusedScrollViewDelegate> delegate;
 /**
  *  所有cell的frame数据
  */
@@ -58,6 +33,19 @@ typedef enum {
 - (void)reloadData;
 
 /**
+ *  注册缓存cell的类型，用于内容自动创建
+ *
+ *  @param cellClass  cell的类型
+ *  @param identifier 缓存cell标识
+ */
+- (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
+/**
+ *  注册xib的cell类型
+ *
+ */
+- (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier;
+
+/**
  *  根据标识去缓存池查找可循环利用的cell
  */
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;
@@ -69,22 +57,4 @@ typedef enum {
  */
 - (id<XFReusedCellDelegate>)cellAtIndex:(NSInteger)index;
 
-
-/**
- *  获得内容间距
- */
-- (CGFloat)marginTopForContent;
-- (CGFloat)marginBottomForContent;
-- (CGFloat)marginLeftForContent;
-- (CGFloat)marginRightForContent;
-/**
- *  获得cell列间距
- *
- */
-- (CGFloat)marginColumnForCell;
-/**
- *  获得cell行间距
- *
- */
-- (CGFloat)marginRowForCell;
 @end

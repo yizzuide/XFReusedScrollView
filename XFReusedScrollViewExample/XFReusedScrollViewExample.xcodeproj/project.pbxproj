@@ -14,14 +14,14 @@
 		4099D70B1D8FDF9A0061000C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D70A1D8FDF9A0061000C /* ViewController.m */; };
 		4099D7101D8FDF9A0061000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4099D70F1D8FDF9A0061000C /* Assets.xcassets */; };
 		4099D7131D8FDF9A0061000C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4099D7111D8FDF9A0061000C /* LaunchScreen.storyboard */; };
-		4099D7201D8FE0DE0061000C /* XFReusedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D71D1D8FE0DE0061000C /* XFReusedScrollView.m */; };
-		4099D7211D8FE0DE0061000C /* XFSimpleFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D71F1D8FE0DE0061000C /* XFSimpleFlowView.m */; };
 		4099D7291D8FE10A0061000C /* XFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D7261D8FE10A0061000C /* XFCell.m */; };
 		4099D72D1D8FE1400061000C /* XFHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D72C1D8FE1400061000C /* XFHorizontalViewController.m */; };
 		4099D7301D8FE39A0061000C /* XFVerticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D72F1D8FE39A0061000C /* XFVerticalViewController.m */; };
-		4099D7331D8FE4D10061000C /* XFWaterflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D7321D8FE4D10061000C /* XFWaterflowView.m */; };
 		4099D7361D8FF1820061000C /* XFWaterflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D7351D8FF1820061000C /* XFWaterflowViewController.m */; };
-		4099D7391D8FF3250061000C /* XFSeatFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D7381D8FF3250061000C /* XFSeatFlowView.m */; };
+		40C33EF51DFAB53700E74874 /* XFReusedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */; };
+		40C33EF61DFAB53700E74874 /* XFSeatFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */; };
+		40C33EF71DFAB53700E74874 /* XFSimpleFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */; };
+		40C33EF81DFAB53700E74874 /* XFWaterflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF41DFAB53700E74874 /* XFWaterflowView.m */; };
 		EE5583600FAD4B25FC516127 /* libPods-XFReusedScrollViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A422DD9F6CD719E93E52F1 /* libPods-XFReusedScrollViewExample.a */; };
 /* End PBXBuildFile section */
 
@@ -38,23 +38,23 @@
 		4099D70F1D8FDF9A0061000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4099D7121D8FDF9A0061000C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4099D7141D8FDF9A0061000C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4099D71B1D8FE0DE0061000C /* XFReusedCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedCellDelegate.h; sourceTree = "<group>"; };
-		4099D71C1D8FE0DE0061000C /* XFReusedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedScrollView.h; sourceTree = "<group>"; };
-		4099D71D1D8FE0DE0061000C /* XFReusedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFReusedScrollView.m; sourceTree = "<group>"; };
-		4099D71E1D8FE0DE0061000C /* XFSimpleFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSimpleFlowView.h; sourceTree = "<group>"; };
-		4099D71F1D8FE0DE0061000C /* XFSimpleFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSimpleFlowView.m; sourceTree = "<group>"; };
 		4099D7251D8FE10A0061000C /* XFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCell.h; sourceTree = "<group>"; };
 		4099D7261D8FE10A0061000C /* XFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCell.m; sourceTree = "<group>"; };
 		4099D72B1D8FE1400061000C /* XFHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFHorizontalViewController.h; sourceTree = "<group>"; };
 		4099D72C1D8FE1400061000C /* XFHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFHorizontalViewController.m; sourceTree = "<group>"; };
 		4099D72E1D8FE39A0061000C /* XFVerticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFVerticalViewController.h; sourceTree = "<group>"; };
 		4099D72F1D8FE39A0061000C /* XFVerticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVerticalViewController.m; sourceTree = "<group>"; };
-		4099D7311D8FE4D10061000C /* XFWaterflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowView.h; sourceTree = "<group>"; };
-		4099D7321D8FE4D10061000C /* XFWaterflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowView.m; sourceTree = "<group>"; };
 		4099D7341D8FF1820061000C /* XFWaterflowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowViewController.h; sourceTree = "<group>"; };
 		4099D7351D8FF1820061000C /* XFWaterflowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowViewController.m; sourceTree = "<group>"; };
-		4099D7371D8FF3250061000C /* XFSeatFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSeatFlowView.h; sourceTree = "<group>"; };
-		4099D7381D8FF3250061000C /* XFSeatFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSeatFlowView.m; sourceTree = "<group>"; };
+		40C33EEC1DFAB53700E74874 /* XFReusedCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedCellDelegate.h; sourceTree = "<group>"; };
+		40C33EED1DFAB53700E74874 /* XFReusedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedScrollView.h; sourceTree = "<group>"; };
+		40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFReusedScrollView.m; sourceTree = "<group>"; };
+		40C33EEF1DFAB53700E74874 /* XFSeatFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSeatFlowView.h; sourceTree = "<group>"; };
+		40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSeatFlowView.m; sourceTree = "<group>"; };
+		40C33EF11DFAB53700E74874 /* XFSimpleFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSimpleFlowView.h; sourceTree = "<group>"; };
+		40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSimpleFlowView.m; sourceTree = "<group>"; };
+		40C33EF31DFAB53700E74874 /* XFWaterflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowView.h; sourceTree = "<group>"; };
+		40C33EF41DFAB53700E74874 /* XFWaterflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowView.m; sourceTree = "<group>"; };
 		9FCBF93FBF250BCBAB0DB67D /* Pods-XFReusedScrollViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFReusedScrollViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XFReusedScrollViewExample/Pods-XFReusedScrollViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A422DD9F6CD719E93E52F1 /* libPods-XFReusedScrollViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XFReusedScrollViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AF4D565C6BA850B0EDFFE /* Pods-XFReusedScrollViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFReusedScrollViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XFReusedScrollViewExample/Pods-XFReusedScrollViewExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		4099D6F71D8FDF9A0061000C = {
 			isa = PBXGroup;
 			children = (
-				4099D71A1D8FE0DE0061000C /* XFReusedScrollView */,
+				40C33EEB1DFAB53700E74874 /* XFReusedScrollView */,
 				4099D7021D8FDF9A0061000C /* XFReusedScrollViewExample */,
 				4099D7011D8FDF9A0061000C /* Products */,
 				AEAE4C92B15FB50202E66676 /* Pods */,
@@ -115,22 +115,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4099D71A1D8FE0DE0061000C /* XFReusedScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				4099D71B1D8FE0DE0061000C /* XFReusedCellDelegate.h */,
-				4099D71C1D8FE0DE0061000C /* XFReusedScrollView.h */,
-				4099D71D1D8FE0DE0061000C /* XFReusedScrollView.m */,
-				4099D71E1D8FE0DE0061000C /* XFSimpleFlowView.h */,
-				4099D71F1D8FE0DE0061000C /* XFSimpleFlowView.m */,
-				4099D7371D8FF3250061000C /* XFSeatFlowView.h */,
-				4099D7381D8FF3250061000C /* XFSeatFlowView.m */,
-				4099D7311D8FE4D10061000C /* XFWaterflowView.h */,
-				4099D7321D8FE4D10061000C /* XFWaterflowView.m */,
-			);
-			path = XFReusedScrollView;
-			sourceTree = "<group>";
-		};
 		4099D7221D8FE10A0061000C /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +147,23 @@
 				400197251D911DB8003D8F92 /* XFWaterflowCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		40C33EEB1DFAB53700E74874 /* XFReusedScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				40C33EEC1DFAB53700E74874 /* XFReusedCellDelegate.h */,
+				40C33EED1DFAB53700E74874 /* XFReusedScrollView.h */,
+				40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */,
+				40C33EEF1DFAB53700E74874 /* XFSeatFlowView.h */,
+				40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */,
+				40C33EF11DFAB53700E74874 /* XFSimpleFlowView.h */,
+				40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */,
+				40C33EF31DFAB53700E74874 /* XFWaterflowView.h */,
+				40C33EF41DFAB53700E74874 /* XFWaterflowView.m */,
+			);
+			name = XFReusedScrollView;
+			path = ../XFReusedScrollView;
 			sourceTree = "<group>";
 		};
 		AEAE4C92B15FB50202E66676 /* Pods */ = {
@@ -304,17 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4099D70B1D8FDF9A0061000C /* ViewController.m in Sources */,
+				40C33EF71DFAB53700E74874 /* XFSimpleFlowView.m in Sources */,
 				400197241D911D9F003D8F92 /* XFWaterflowCell.m in Sources */,
 				4099D7081D8FDF9A0061000C /* AppDelegate.m in Sources */,
-				4099D7211D8FE0DE0061000C /* XFSimpleFlowView.m in Sources */,
+				40C33EF81DFAB53700E74874 /* XFWaterflowView.m in Sources */,
+				40C33EF51DFAB53700E74874 /* XFReusedScrollView.m in Sources */,
 				4099D7051D8FDF9A0061000C /* main.m in Sources */,
-				4099D7391D8FF3250061000C /* XFSeatFlowView.m in Sources */,
 				4099D7291D8FE10A0061000C /* XFCell.m in Sources */,
 				4099D7301D8FE39A0061000C /* XFVerticalViewController.m in Sources */,
 				4099D72D1D8FE1400061000C /* XFHorizontalViewController.m in Sources */,
-				4099D7331D8FE4D10061000C /* XFWaterflowView.m in Sources */,
-				4099D7201D8FE0DE0061000C /* XFReusedScrollView.m in Sources */,
 				4099D7361D8FF1820061000C /* XFWaterflowViewController.m in Sources */,
+				40C33EF61DFAB53700E74874 /* XFSeatFlowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,12 @@
 
 #import "XFReusedScrollView.h"
 
-#define XFReusedScrollViewDefaultMargin 8
+@interface XFReusedScrollView ()
+// 绑定的标识与cell类型
+@property (nonatomic, strong) NSMutableDictionary *registerCellMap;
+@end
 
 @implementation XFReusedScrollView
-
-@dynamic delegate;
 
 #pragma mark - 初始化
 - (NSMutableArray *)cellFrames
@@ -39,6 +40,14 @@
     return _reusableCells;
 }
 
+- (NSDictionary *)registerCellMap
+{
+    if (_registerCellMap == nil) {
+        self.registerCellMap = [NSMutableDictionary dictionary];
+    }
+    return _registerCellMap;
+}
+
 #pragma mark - 生命周期方法
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -49,7 +58,6 @@
             // 禁止延迟150m对子View的事件派发
             self.delaysContentTouches = NO;
         }
-        
     }
     return self;
 }
@@ -118,6 +126,15 @@
     [self clearDirty];
 }
 
+- (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier
+{
+    [self.registerCellMap setObject:NSStringFromClass(cellClass) forKey:identifier];
+}
+
+- (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier
+{
+    [self.registerCellMap setObject:nib forKey:identifier];
+}
 
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier
 {
@@ -132,6 +149,20 @@
     
     if (reusableCell) { // 从缓存池中移除
         [self.reusableCells removeObject:reusableCell];
+    }else{
+        // 如果缓存池没有就自动跟据注册类型创建
+        id cellType = [self.registerCellMap objectForKey:identifier];
+        if ([cellType isKindOfClass:[UINib class]]) {
+            UINib *nib = cellType;
+            reusableCell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+        }else{
+            NSString *className = cellType;
+            if (className) {
+                reusableCell = [[NSClassFromString(className) alloc] init];
+            }
+        }
+        // 设置标识
+        reusableCell.identifier = identifier;
     }
     // 返回可利用的cell
     return reusableCell;
@@ -143,43 +174,8 @@
     return nil;
 }
 
-- (CGFloat)marginTopForContent {
-    return [self marginForType:XFReusedScrollViewMarginTypeTop];
-}
-
-- (CGFloat)marginBottomForContent {
-    return [self marginForType:XFReusedScrollViewMarginTypeBottom];
-}
-
-- (CGFloat)marginLeftForContent {
-    return [self marginForType:XFReusedScrollViewMarginTypeLeft];
-}
-
-- (CGFloat)marginRightForContent {
-    return [self marginForType:XFReusedScrollViewMarginTypeRight];
-}
-
-- (CGFloat)marginColumnForCell {
-    return [self marginForType:XFReusedScrollViewMarginTypeColumn];
-}
-
-- (CGFloat)marginRowForCell {
-    return [self marginForType:XFReusedScrollViewMarginTypeRow];
-}
-
 
 #pragma mark - 私有方法
-/**
- *  间距
- */
-- (CGFloat)marginForType:(XFReusedScrollViewMarginType)type
-{
-    if ([self.delegate respondsToSelector:@selector(reusedScrollView:marginForType:)]) {
-        return [self.delegate reusedScrollView:self marginForType:type];
-    } else {
-        return XFReusedScrollViewDefaultMargin;
-    }
-}
 
 /**
  *  判断一个frame有无显示在屏幕上

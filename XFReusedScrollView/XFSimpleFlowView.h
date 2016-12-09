@@ -1,12 +1,23 @@
 //
 //  XFSimpleFlowView.h
-//  AdjustStudentSeat
+//  XFReusedScrollView
 //
 //  Created by 付星 on 16/9/19.
 //  Copyright © 2016年 yizzuide. All rights reserved.
 //
 
 #import "XFReusedScrollView.h"
+
+typedef enum {
+    // ScrollView上下左右间距
+    XFSimpleFlowViewMarginTypeTop,
+    XFSimpleFlowViewMarginTypeBottom,
+    XFSimpleFlowViewMarginTypeLeft,
+    XFSimpleFlowViewMarginTypeRight,
+    
+    XFSimpleFlowViewMarginTypeColumn, // cell的列间距
+    XFSimpleFlowViewMarginTypeRow, // cell的行间距
+} XFSimpleFlowViewMarginType;
 
 @class XFSimpleFlowView;
 /**
@@ -36,9 +47,13 @@
 /**
  *  代理方法
  */
-@protocol XFSimpleFlowViewDelegate <XFReusedScrollViewDelegate>
+@protocol XFSimpleFlowViewDelegate <UIScrollViewDelegate>
 
 @optional
+/**
+ *  cell内容间距
+ */
+- (CGFloat)simpleFlowView:(XFReusedScrollView *)simpleFlowView marginForType:(XFSimpleFlowViewMarginType)type;
 /**
  *  cell高度
  *
@@ -80,4 +95,22 @@
  *  布局之后（这是一个勾子方法，用于清理数据）
  */
 - (void)layoutAfter;
+
+/**
+ *  获得内容间距
+ */
+- (CGFloat)marginTopForContent;
+- (CGFloat)marginBottomForContent;
+- (CGFloat)marginLeftForContent;
+- (CGFloat)marginRightForContent;
+/**
+ *  获得cell列间距
+ *
+ */
+- (CGFloat)marginColumnForCell;
+/**
+ *  获得cell行间距
+ *
+ */
+- (CGFloat)marginRowForCell;
 @end

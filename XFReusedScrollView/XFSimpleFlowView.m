@@ -1,6 +1,6 @@
 //
 //  XFSimpleFlowView.m
-//  AdjustStudentSeat
+//  XFReusedScrollView
 //
 //  Created by 付星 on 16/9/19.
 //  Copyright © 2016年 yizzuide. All rights reserved.
@@ -8,6 +8,7 @@
 
 #import "XFSimpleFlowView.h"
 
+#define XFSimpleFlowViewDefaultMargin 8
 #define XFSimpleFlowViewDefaultCellWH 100
 #define XFSimpleFlowViewDefaultSectionCount 1
 
@@ -69,6 +70,30 @@
 - (id<XFReusedCellDelegate>)cellAtIndex:(NSInteger)index
 {
     return [self.dataSource simpleFlowView:self cellForRowAtIndexPath:[self indexPathFromIndex:index]];
+}
+
+- (CGFloat)marginTopForContent {
+    return [self marginForType:XFSimpleFlowViewMarginTypeTop];
+}
+
+- (CGFloat)marginBottomForContent {
+    return [self marginForType:XFSimpleFlowViewMarginTypeBottom];
+}
+
+- (CGFloat)marginLeftForContent {
+    return [self marginForType:XFSimpleFlowViewMarginTypeLeft];
+}
+
+- (CGFloat)marginRightForContent {
+    return [self marginForType:XFSimpleFlowViewMarginTypeRight];
+}
+
+- (CGFloat)marginColumnForCell {
+    return [self marginForType:XFSimpleFlowViewMarginTypeColumn];
+}
+
+- (CGFloat)marginRowForCell {
+    return [self marginForType:XFSimpleFlowViewMarginTypeRow];
 }
 
 #pragma mark - 勾子方法
@@ -145,5 +170,16 @@
     return XFSimpleFlowViewDefaultCellWH;
 }
 
+/**
+ *  间距
+ */
+- (CGFloat)marginForType:(XFSimpleFlowViewMarginType)type
+{
+    if ([self.delegate respondsToSelector:@selector(simpleFlowView:marginForType:)]) {
+        return [self.delegate simpleFlowView:self marginForType:type];
+    } else {
+        return XFSimpleFlowViewDefaultMargin;
+    }
+}
 
 @end
