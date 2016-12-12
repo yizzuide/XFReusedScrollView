@@ -12,7 +12,7 @@ Powerful reused scrollView for IOS. Support custom extension layout.
 ## Installation
 ### CocoaPods
 ```ruby
-pod 'XFReusedScrollView'
+pod 'XFReusedScrollView', '~> 1.0'
 ```
 
 ### Manual
