@@ -87,7 +87,7 @@
  */
 - (CGFloat)cellWidth
 {
-    return (self.bounds.size.width - self.marginLeftForContent - self.marginRightForContent - (self.columns - 1) * self.marginColumnForCell) / self.columns;
+    return (self.bounds.size.width + 1 - self.marginLeftForContent - self.marginRightForContent - (self.columns - 1) * self.marginColumnForCell) / self.columns;
 }
 
 #pragma mark - 私有方法
