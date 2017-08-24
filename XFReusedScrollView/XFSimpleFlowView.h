@@ -113,4 +113,9 @@ typedef enum {
  *
  */
 - (CGFloat)marginRowForCell;
+/**
+ *  通用cell高度（用于高度一致的cell）
+ *
+ */
+- (CGFloat)normalCellHeight;
 @end

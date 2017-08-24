@@ -96,6 +96,11 @@
     return [self marginForType:XFSimpleFlowViewMarginTypeRow];
 }
 
+- (CGFloat)normalCellHeight
+{
+    return [self cellHeightWithIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+}
+
 #pragma mark - 勾子方法
 - (CGRect)layoutCellAtRow:(NSInteger)row ofSection:(NSInteger)section withCellHeight:(CGFloat)cellHeight
 {

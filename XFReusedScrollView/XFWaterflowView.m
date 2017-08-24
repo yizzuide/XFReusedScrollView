@@ -22,6 +22,7 @@
 
 @implementation XFWaterflowView
 @dynamic dataSource;
+@dynamic delegate;
 
 // 布局前初始化一些变量
 - (void)layoutBefore
@@ -87,7 +88,21 @@
  */
 - (CGFloat)cellWidth
 {
+    if ([self.delegate respondsToSelector:@selector(waterflowViewCanWidthEqualsHeight:)] &&
+        [self.delegate waterflowViewCanWidthEqualsHeight:self]) {
+        return self.normalCellHeight;
+    }
     return (self.bounds.size.width + 1 - self.marginLeftForContent - self.marginRightForContent - (self.columns - 1) * self.marginColumnForCell) / self.columns;
+}
+
+// 如果允许宽度等于高度，覆盖掉父类的设置
+- (CGFloat)marginColumnForCell
+{
+    if ([self.delegate respondsToSelector:@selector(waterflowViewCanWidthEqualsHeight:)] &&
+        [self.delegate waterflowViewCanWidthEqualsHeight:self]) {
+        return (self.bounds.size.width - self.marginLeftForContent - self.marginRightForContent - self.columns * self.normalCellHeight) / (self.columns - 1);
+    }
+    return [super marginColumnForCell];
 }
 
 #pragma mark - 私有方法
