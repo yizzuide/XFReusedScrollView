@@ -14,7 +14,7 @@
 // 总列数
 @property (nonatomic, assign) NSInteger columns;
 // cell宽度
-@property (nonatomic, assign) NSInteger cellW;
+@property (nonatomic, assign) CGFloat cellW;
 
 // 存放所有列的最大Y值
 @property (nonatomic, strong) NSMutableArray *maxYOfColumns;
@@ -92,7 +92,7 @@
         [self.delegate waterflowViewCanWidthEqualsHeight:self]) {
         return self.normalCellHeight;
     }
-    return (self.bounds.size.width + 1 - self.marginLeftForContent - self.marginRightForContent - (self.columns - 1) * self.marginColumnForCell) / self.columns;
+    return (self.bounds.size.width - self.marginLeftForContent - self.marginRightForContent - (self.columns - 1) * self.marginColumnForCell) / self.columns;
 }
 
 // 如果允许宽度等于高度，覆盖掉父类的设置

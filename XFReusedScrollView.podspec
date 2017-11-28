@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'XFReusedScrollView'
-s.version = '1.1.0'
+s.version = '1.5.0'
 s.license = 'MIT'
 s.summary = 'Powerful reused scrollView for IOS. Support custom extension layout.'
 s.homepage = 'https://github.com/yizzuide/XFReusedScrollView'

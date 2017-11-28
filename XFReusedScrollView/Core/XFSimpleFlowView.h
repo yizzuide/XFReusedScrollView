@@ -8,6 +8,10 @@
 
 #import "XFReusedScrollView.h"
 
+#define XFSimpleFlowViewDefaultMargin 8
+#define XFSimpleFlowViewDefaultCellWH 100
+#define XFSimpleFlowViewDefaultSectionCount 1
+
 typedef enum {
     // ScrollView上下左右间距
     XFSimpleFlowViewMarginTypeTop,

@@ -8,10 +8,6 @@
 
 #import "XFSimpleFlowView.h"
 
-#define XFSimpleFlowViewDefaultMargin 8
-#define XFSimpleFlowViewDefaultCellWH 100
-#define XFSimpleFlowViewDefaultSectionCount 1
-
 @interface XFSimpleFlowView ()
 /**
  *  记录每组的cell数量
@@ -137,8 +133,8 @@
 - (NSIndexPath *)indexPathFromIndex:(NSInteger)index
 {
     // 根据全局index下标组装indexPath
-    NSInteger selectedSection;
-    NSInteger selectedRow;
+    NSInteger selectedSection = 0;
+    NSInteger selectedRow = 0;
     NSInteger left = index;
     NSInteger sectionCount = self.rowsOfSection.allKeys.count;
     for (int i = 0; i<sectionCount; i++) {

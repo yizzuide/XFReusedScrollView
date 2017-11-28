@@ -18,10 +18,13 @@
 		4099D72D1D8FE1400061000C /* XFHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D72C1D8FE1400061000C /* XFHorizontalViewController.m */; };
 		4099D7301D8FE39A0061000C /* XFVerticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D72F1D8FE39A0061000C /* XFVerticalViewController.m */; };
 		4099D7361D8FF1820061000C /* XFWaterflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4099D7351D8FF1820061000C /* XFWaterflowViewController.m */; };
-		40C33EF51DFAB53700E74874 /* XFReusedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */; };
-		40C33EF61DFAB53700E74874 /* XFSeatFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */; };
-		40C33EF71DFAB53700E74874 /* XFSimpleFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */; };
-		40C33EF81DFAB53700E74874 /* XFWaterflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C33EF41DFAB53700E74874 /* XFWaterflowView.m */; };
+		40BB4FCB1FCD8094007A82D7 /* XFMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FCA1FCD8094007A82D7 /* XFMenuViewController.m */; };
+		40BB4FCE1FCD82D4007A82D7 /* XFMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FCD1FCD82D4007A82D7 /* XFMenuCell.m */; };
+		40BB4FDD1FCDA6F4007A82D7 /* XFReusedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FD11FCDA6F4007A82D7 /* XFReusedScrollView.m */; };
+		40BB4FDE1FCDA6F4007A82D7 /* XFSimpleFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FD51FCDA6F4007A82D7 /* XFSimpleFlowView.m */; };
+		40BB4FDF1FCDA6F4007A82D7 /* XFWaterflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FDA1FCDA6F4007A82D7 /* XFWaterflowView.m */; };
+		40BB4FE01FCDA6F4007A82D7 /* XFSeatFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FDB1FCDA6F4007A82D7 /* XFSeatFlowView.m */; };
+		40BB4FE11FCDA6F4007A82D7 /* XFTextFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4FDC1FCDA6F4007A82D7 /* XFTextFlowView.m */; };
 		EE5583600FAD4B25FC516127 /* libPods-XFReusedScrollViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A422DD9F6CD719E93E52F1 /* libPods-XFReusedScrollViewExample.a */; };
 /* End PBXBuildFile section */
 
@@ -46,15 +49,21 @@
 		4099D72F1D8FE39A0061000C /* XFVerticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFVerticalViewController.m; sourceTree = "<group>"; };
 		4099D7341D8FF1820061000C /* XFWaterflowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowViewController.h; sourceTree = "<group>"; };
 		4099D7351D8FF1820061000C /* XFWaterflowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowViewController.m; sourceTree = "<group>"; };
-		40C33EEC1DFAB53700E74874 /* XFReusedCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedCellDelegate.h; sourceTree = "<group>"; };
-		40C33EED1DFAB53700E74874 /* XFReusedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedScrollView.h; sourceTree = "<group>"; };
-		40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFReusedScrollView.m; sourceTree = "<group>"; };
-		40C33EEF1DFAB53700E74874 /* XFSeatFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSeatFlowView.h; sourceTree = "<group>"; };
-		40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSeatFlowView.m; sourceTree = "<group>"; };
-		40C33EF11DFAB53700E74874 /* XFSimpleFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSimpleFlowView.h; sourceTree = "<group>"; };
-		40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSimpleFlowView.m; sourceTree = "<group>"; };
-		40C33EF31DFAB53700E74874 /* XFWaterflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowView.h; sourceTree = "<group>"; };
-		40C33EF41DFAB53700E74874 /* XFWaterflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowView.m; sourceTree = "<group>"; };
+		40BB4FC91FCD8094007A82D7 /* XFMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFMenuViewController.h; sourceTree = "<group>"; };
+		40BB4FCA1FCD8094007A82D7 /* XFMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFMenuViewController.m; sourceTree = "<group>"; };
+		40BB4FCC1FCD82D4007A82D7 /* XFMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFMenuCell.h; sourceTree = "<group>"; };
+		40BB4FCD1FCD82D4007A82D7 /* XFMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFMenuCell.m; sourceTree = "<group>"; };
+		40BB4FD11FCDA6F4007A82D7 /* XFReusedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFReusedScrollView.m; sourceTree = "<group>"; };
+		40BB4FD21FCDA6F4007A82D7 /* XFReusedCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedCellDelegate.h; sourceTree = "<group>"; };
+		40BB4FD31FCDA6F4007A82D7 /* XFSimpleFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSimpleFlowView.h; sourceTree = "<group>"; };
+		40BB4FD41FCDA6F4007A82D7 /* XFReusedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFReusedScrollView.h; sourceTree = "<group>"; };
+		40BB4FD51FCDA6F4007A82D7 /* XFSimpleFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSimpleFlowView.m; sourceTree = "<group>"; };
+		40BB4FD71FCDA6F4007A82D7 /* XFSeatFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSeatFlowView.h; sourceTree = "<group>"; };
+		40BB4FD81FCDA6F4007A82D7 /* XFWaterflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWaterflowView.h; sourceTree = "<group>"; };
+		40BB4FD91FCDA6F4007A82D7 /* XFTextFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFTextFlowView.h; sourceTree = "<group>"; };
+		40BB4FDA1FCDA6F4007A82D7 /* XFWaterflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWaterflowView.m; sourceTree = "<group>"; };
+		40BB4FDB1FCDA6F4007A82D7 /* XFSeatFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSeatFlowView.m; sourceTree = "<group>"; };
+		40BB4FDC1FCDA6F4007A82D7 /* XFTextFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFTextFlowView.m; sourceTree = "<group>"; };
 		9FCBF93FBF250BCBAB0DB67D /* Pods-XFReusedScrollViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFReusedScrollViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XFReusedScrollViewExample/Pods-XFReusedScrollViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A422DD9F6CD719E93E52F1 /* libPods-XFReusedScrollViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XFReusedScrollViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AF4D565C6BA850B0EDFFE /* Pods-XFReusedScrollViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFReusedScrollViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XFReusedScrollViewExample/Pods-XFReusedScrollViewExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +84,7 @@
 		4099D6F71D8FDF9A0061000C = {
 			isa = PBXGroup;
 			children = (
-				40C33EEB1DFAB53700E74874 /* XFReusedScrollView */,
+				40BB4FCF1FCDA6F4007A82D7 /* XFReusedScrollView */,
 				4099D7021D8FDF9A0061000C /* XFReusedScrollViewExample */,
 				4099D7011D8FDF9A0061000C /* Products */,
 				AEAE4C92B15FB50202E66676 /* Pods */,
@@ -133,6 +142,8 @@
 				4099D72F1D8FE39A0061000C /* XFVerticalViewController.m */,
 				4099D7341D8FF1820061000C /* XFWaterflowViewController.h */,
 				4099D7351D8FF1820061000C /* XFWaterflowViewController.m */,
+				40BB4FC91FCD8094007A82D7 /* XFMenuViewController.h */,
+				40BB4FCA1FCD8094007A82D7 /* XFMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,25 +156,45 @@
 				400197221D911D9F003D8F92 /* XFWaterflowCell.h */,
 				400197231D911D9F003D8F92 /* XFWaterflowCell.m */,
 				400197251D911DB8003D8F92 /* XFWaterflowCell.xib */,
+				40BB4FCC1FCD82D4007A82D7 /* XFMenuCell.h */,
+				40BB4FCD1FCD82D4007A82D7 /* XFMenuCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		40C33EEB1DFAB53700E74874 /* XFReusedScrollView */ = {
+		40BB4FCF1FCDA6F4007A82D7 /* XFReusedScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				40C33EEC1DFAB53700E74874 /* XFReusedCellDelegate.h */,
-				40C33EED1DFAB53700E74874 /* XFReusedScrollView.h */,
-				40C33EEE1DFAB53700E74874 /* XFReusedScrollView.m */,
-				40C33EEF1DFAB53700E74874 /* XFSeatFlowView.h */,
-				40C33EF01DFAB53700E74874 /* XFSeatFlowView.m */,
-				40C33EF11DFAB53700E74874 /* XFSimpleFlowView.h */,
-				40C33EF21DFAB53700E74874 /* XFSimpleFlowView.m */,
-				40C33EF31DFAB53700E74874 /* XFWaterflowView.h */,
-				40C33EF41DFAB53700E74874 /* XFWaterflowView.m */,
+				40BB4FD01FCDA6F4007A82D7 /* Core */,
+				40BB4FD61FCDA6F4007A82D7 /* Extension */,
 			);
 			name = XFReusedScrollView;
 			path = ../XFReusedScrollView;
+			sourceTree = "<group>";
+		};
+		40BB4FD01FCDA6F4007A82D7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				40BB4FD11FCDA6F4007A82D7 /* XFReusedScrollView.m */,
+				40BB4FD21FCDA6F4007A82D7 /* XFReusedCellDelegate.h */,
+				40BB4FD31FCDA6F4007A82D7 /* XFSimpleFlowView.h */,
+				40BB4FD41FCDA6F4007A82D7 /* XFReusedScrollView.h */,
+				40BB4FD51FCDA6F4007A82D7 /* XFSimpleFlowView.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		40BB4FD61FCDA6F4007A82D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				40BB4FD71FCDA6F4007A82D7 /* XFSeatFlowView.h */,
+				40BB4FD81FCDA6F4007A82D7 /* XFWaterflowView.h */,
+				40BB4FD91FCDA6F4007A82D7 /* XFTextFlowView.h */,
+				40BB4FDA1FCDA6F4007A82D7 /* XFWaterflowView.m */,
+				40BB4FDB1FCDA6F4007A82D7 /* XFSeatFlowView.m */,
+				40BB4FDC1FCDA6F4007A82D7 /* XFTextFlowView.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		AEAE4C92B15FB50202E66676 /* Pods */ = {
@@ -304,18 +335,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BB4FDE1FCDA6F4007A82D7 /* XFSimpleFlowView.m in Sources */,
 				4099D70B1D8FDF9A0061000C /* ViewController.m in Sources */,
-				40C33EF71DFAB53700E74874 /* XFSimpleFlowView.m in Sources */,
+				40BB4FDF1FCDA6F4007A82D7 /* XFWaterflowView.m in Sources */,
 				400197241D911D9F003D8F92 /* XFWaterflowCell.m in Sources */,
 				4099D7081D8FDF9A0061000C /* AppDelegate.m in Sources */,
-				40C33EF81DFAB53700E74874 /* XFWaterflowView.m in Sources */,
-				40C33EF51DFAB53700E74874 /* XFReusedScrollView.m in Sources */,
+				40BB4FCE1FCD82D4007A82D7 /* XFMenuCell.m in Sources */,
+				40BB4FDD1FCDA6F4007A82D7 /* XFReusedScrollView.m in Sources */,
 				4099D7051D8FDF9A0061000C /* main.m in Sources */,
 				4099D7291D8FE10A0061000C /* XFCell.m in Sources */,
 				4099D7301D8FE39A0061000C /* XFVerticalViewController.m in Sources */,
+				40BB4FCB1FCD8094007A82D7 /* XFMenuViewController.m in Sources */,
 				4099D72D1D8FE1400061000C /* XFHorizontalViewController.m in Sources */,
 				4099D7361D8FF1820061000C /* XFWaterflowViewController.m in Sources */,
-				40C33EF61DFAB53700E74874 /* XFSeatFlowView.m in Sources */,
+				40BB4FE01FCDA6F4007A82D7 /* XFSeatFlowView.m in Sources */,
+				40BB4FE11FCDA6F4007A82D7 /* XFTextFlowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 #import "XFHorizontalViewController.h"
 #import "XFWaterflowViewController.h"
 #import "XFVerticalViewController.h"
+#import "XFMenuViewController.h"
 
 @interface ViewController () <XFSettingTableViewDataSource>
 
@@ -57,6 +58,11 @@
                              XFSettingItemTitle: @"纵向分组布局",
                              XFSettingItemClass: [XFSettingArrowItem class],
                              XFSettingItemDestViewControllerClass:[XFVerticalViewController class],
+                             },
+                         @{
+                             XFSettingItemTitle: @"滚动菜单",
+                             XFSettingItemClass: [XFSettingArrowItem class],
+                             XFSettingItemDestViewControllerClass:[XFMenuViewController class],
                              },
                          @{
                              XFSettingItemTitle: @"瀑布流布局",

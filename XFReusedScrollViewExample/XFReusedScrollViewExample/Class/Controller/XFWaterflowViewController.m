@@ -15,7 +15,7 @@
 
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
-@interface XFWaterflowViewController () <XFWaterflowViewDataSource,XFSimpleFlowViewDelegate>
+@interface XFWaterflowViewController () <XFWaterflowViewDataSource,XFWaterflowViewDelegate>
 
 @end
 
