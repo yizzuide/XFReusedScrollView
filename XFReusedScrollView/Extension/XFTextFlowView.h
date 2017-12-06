@@ -21,5 +21,7 @@
  * 是否禁用迷雾遮罩
  */
 @property (nonatomic, assign) BOOL maskDisabled;
+@property (nonatomic, strong) NSArray *maskCGColors;
+@property (nonatomic, strong) NSArray<NSNumber *> *masklocations;
 @property (nonatomic, weak) id<XFTextFlowViewDelegate> delegate;
 @end

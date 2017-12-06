@@ -36,11 +36,13 @@ static NSString *kMenuCellID = @"kXFMenuCellID";
     }
     
     XFTextFlowView *flowView = [[XFTextFlowView alloc] init];
-//    flowView.backgroundColor = [UIColor grayColor];
     flowView.frame = CGRectMake(0, 100, self.view.bounds.size.width, 44);
     flowView.dataSource = self;
     flowView.delegate = self;
     flowView.showsHorizontalScrollIndicator = NO;
+    flowView.maskCGColors = @[(id)[[UIColor clearColor] CGColor],
+                              (id)[[UIColor blackColor] CGColor]];
+    flowView.masklocations = @[@0.66, @1.0];
     [self.view addSubview:flowView];
     
     [flowView registerClass:[XFMenuCell class] forCellReuseIdentifier:kMenuCellID];
@@ -75,6 +77,7 @@ static NSString *kMenuCellID = @"kXFMenuCellID";
 {
     switch (type) {
         case XFSimpleFlowViewMarginTypeLeft:
+            return 15.5f;
         case XFSimpleFlowViewMarginTypeRight:
             return 80;
         default:

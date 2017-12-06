@@ -31,13 +31,18 @@
                 maskView.layer.mask = ({
                     CAGradientLayer *maskLayer = [CAGradientLayer layer];
                     maskLayer.frame = maskView.bounds;
-                    maskLayer.colors = @[
-                                         (id)[[UIColor blackColor] CGColor],
-                                         (id)[[UIColor clearColor] CGColor],
-                                         (id)[[UIColor clearColor] CGColor],
-                                         (id)[[UIColor blackColor] CGColor],
-                                         ];
-                    maskLayer.locations = @[@0.0, @0.33, @0.66, @1.0];
+                    if (self.maskCGColors.count && self.masklocations.count) {
+                        maskLayer.colors = self.maskCGColors;
+                        maskLayer.locations = self.masklocations;
+                    } else {
+                        maskLayer.colors = @[
+                                             (id)[[UIColor blackColor] CGColor],
+                                             (id)[[UIColor clearColor] CGColor],
+                                             (id)[[UIColor clearColor] CGColor],
+                                             (id)[[UIColor blackColor] CGColor],
+                                             ];
+                        maskLayer.locations = @[@0.0, @0.33, @0.66, @1.0];
+                    }
                     maskLayer.startPoint = CGPointMake(0.0, 0.0);
                     maskLayer.endPoint = CGPointMake(1.0, 0.0);
                     maskLayer;
